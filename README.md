@@ -58,11 +58,46 @@ if __name__ == "__main__":
     start_server()`
 
   ![Screenshot 2024-12-27 194119](https://github.com/user-attachments/assets/d57099f7-e09c-4b66-b1c8-092f48041930)
+  
 Embedding the script into the search engine to steal cookies.
 
 ![Screenshot 2024-12-27 194543](https://github.com/user-attachments/assets/fccff3cf-462b-4217-83ea-a1c9e6a8679e)
 
 ![image](https://github.com/user-attachments/assets/b42db7a4-78ad-4133-b1eb-5d89be1f064d)
+
+to avoid this Attack : Check user inputs, make outputs safe, and block bad scripts with CSP.
+# Additional Vulnerabilities 
+## Vulnerability: wired crypto
+Juice Shop has a cryptographic flaw where weak encryption or poor key management exposes sensitive data.  
+## Prevention:
+Use strong encryption (e.g., AES-256) and secure key storage.  
+## Precaution: 
+Regularly audit and update cryptographic libraries, avoiding custom implementations.
+
+![+1](https://github.com/user-attachments/assets/0fec56c4-468c-4da9-8fcd-b633a7357691)
+## Vulnerability: 
+Björn's Favorite Pet challenge in Juice Shop exploits predictable answers in security questions.  
+## Prevention: 
+Avoid using easily guessable security questions and implement multi-factor authentication.  
+## Precaution: 
+Regularly review and strengthen account recovery mechanisms.
+
+![+2](https://github.com/user-attachments/assets/5999f059-525d-4b6e-94f6-8ae513d86053)
+## Vulnerability: 
+The "Viewing Other's Baskets" issue in Juice Shop allows unauthorized access to other users' shopping baskets via insecure API endpoints.  
+## Prevention: 
+Implement proper access control checks and validate user permissions on every request.  
+## Precaution: 
+Regularly test APIs for broken access control vulnerabilities and enforce strict authorization rules.
+
+![+3](https://github.com/user-attachments/assets/32e1a44f-352d-4918-8f89-ea17bfcb2652)
+
+![+4](https://github.com/user-attachments/assets/25c45752-9723-4885-aba4-d965c3d6213c)
+
+
+
+
+
 
 
 
