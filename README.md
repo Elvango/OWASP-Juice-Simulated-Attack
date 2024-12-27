@@ -30,6 +30,14 @@ We can easily obtain the admin path by searching through the website's code file
 ![2](https://github.com/user-attachments/assets/387e7b35-9b7b-4db3-ab8a-e1b1c676bc22)
 
 ![3](https://github.com/user-attachments/assets/410d8c9f-1c92-4743-9603-d552c2722d2b)
+ ## Vulnerability*:
+  The "Enumeration Vulnerability" in Juice Shop allows attackers to discover valid usernames or emails via predictable error messages.  
+ ## Prevention*:
+  Use generic error messages for authentication failures, avoiding hints about valid accounts.  
+ ## Precaution*:
+  Implement rate limiting and logging to detect and mitigate enumeration attempts.
+
+  ![-1](https://github.com/user-attachments/assets/2c504e31-6423-42a0-b603-e6fef6757b04)
 # Brute Force Attack
 In this attack, I will use the Burp Suite tool to brute force the admin's password by attempting all the passwords contained in the wordlist , The tool sends requests to the site with different passwords until a request is accepted. 
 ### to avoid this attack We should make strong complicated passwords and block te ip which try to access many times
@@ -93,6 +101,30 @@ Regularly test APIs for broken access control vulnerabilities and enforce strict
 ![+3](https://github.com/user-attachments/assets/32e1a44f-352d-4918-8f89-ea17bfcb2652)
 
 ![+4](https://github.com/user-attachments/assets/25c45752-9723-4885-aba4-d965c3d6213c)
+## Vulnerability: 
+The Missing Code (or Missing Authorization Code) vulnerability in Juice Shop occurs when an authorization code or a necessary verification step is omitted in the ## authentication process, allowing attackers to bypass security checks and gain unauthorized access to the system.
+Prevention:
+Ensure that all authorization mechanisms, such as tokens or verification codes, are properly implemented and validated for every sensitive action. Every request that requires authorization should check the validity of the code before granting access.
+## Precaution: 
+Regularly perform security reviews and code audits to identify and correct any missing or improperly implemented authorization mechanisms. Conduct thorough testing, including edge cases where authorization might be bypassed, to ensure robust security.
+
+![+8](https://github.com/user-attachments/assets/7e2e0090-0dc6-4bd4-ac84-fc11a0c47aec)
+
+![+9](https://github.com/user-attachments/assets/da7277fb-29a3-4b7a-868d-8d05d6fe8a4d)
+
+## Vulnerability: 
+The "Access Logs Exposure" issue occurs when access logs containing sensitive information, such as user details, IP addresses, or authentication tokens, are exposed to unauthorized users. This can happen due to misconfigured server settings or inadequate log protection.
+
+## Prevention: 
+Implement proper logging mechanisms with access controls, ensuring that logs are only accessible by authorized personnel. Additionally, store logs in secure locations and use encryption to protect sensitive data.
+
+## Precaution: 
+Regularly review and audit server configurations to prevent unauthorized access to logs. Use automated tools to monitor access to sensitive logs and ensure they are not exposed publicly.
+
+![+66](https://github.com/user-attachments/assets/44ab1e7b-e19d-4a4a-9e4c-264c0e70e97b)
+
+![+77](https://github.com/user-attachments/assets/161b19fb-7635-41c9-9fc7-44f6e80ef43e)
+
 
 
 
